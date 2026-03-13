@@ -1,3 +1,6 @@
 {
-  "item.practicemod.printer": "Printer"
+  "itemgroup.new_stuff": "New Stuff",
+
+  "item.practicemod.printer": "Printer",
+  "block.practicemod.walk_block": "Walk Block"
 }

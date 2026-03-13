@@ -1,5 +1,7 @@
 package flowless24.practicemod;
 
+import flowless24.practicemod.block.ModBlocks;
+import flowless24.practicemod.item.ModItemGroup;
 import flowless24.practicemod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +16,10 @@ public class PracticeMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+
+        ModItemGroup.registerItemGroups();
+
         ModItems.RegisterModItems();
+        ModBlocks.RegisterModBlocks();
 	}
 }

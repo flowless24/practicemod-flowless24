@@ -1,10 +1,12 @@
 package flowless24.practicemod.item;
 
 import flowless24.practicemod.PracticeMod;
+import flowless24.practicemod.block.custom.WalkBlock;
 import flowless24.practicemod.item.custom.PrinterItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -20,11 +22,8 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(PracticeMod.MOD_ID, name), item);
     }
 
-    private static void itemGroupIncredients(FabricItemGroupEntries entries) {
-        entries.add(PRINTER);
-    }
     public static void RegisterModItems(){
     PracticeMod.LOGGER.info("Registering mod items for " + PracticeMod.MOD_ID);
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIncredients);
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS);
     }
 }
