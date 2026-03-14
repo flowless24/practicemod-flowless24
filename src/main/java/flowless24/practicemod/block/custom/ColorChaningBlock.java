@@ -1,18 +1,18 @@
+/*
 package flowless24.practicemod.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import java.awt.*;
 import java.util.Random;
 
 public class ColorChaningBlock extends Block {
@@ -36,13 +36,15 @@ public class ColorChaningBlock extends Block {
     }
 
     @Override
-    public void onUse(BlockState blockState, World world, BlockPos pos,
-                      PlayerEntity player, Hand hand, BlockHitResult hit) {
+    public ActionResult onUse(BlockState blockState, World world, BlockPos pos,
+                              PlayerEntity player, Hand hand, BlockHitResult hit) {
 
         if(!world.isClient){
             int newNumber = random.nextInt(0, woolType.length);
                 world.setBlockState(pos, blockState.cycle(COLOR));
         }
+        return null;
     }
 
 }
+*/
