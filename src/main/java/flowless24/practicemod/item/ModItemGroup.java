@@ -3,7 +3,6 @@ package flowless24.practicemod.item;
 import flowless24.practicemod.PracticeMod;
 import flowless24.practicemod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -11,7 +10,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import org.objectweb.asm.util.Printer;
 
 public class ModItemGroup {
     public static final ItemGroup NEW_STUFF = Registry.register(Registries.ITEM_GROUP,

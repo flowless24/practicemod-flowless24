@@ -31,18 +31,4 @@ public class PrinterItem extends Item {
         }
         return TypedActionResult.success(user.getStackInHand(hand));
     }
-
-    /*
-    @Override
-    public ActionResult use(){
-        PlayerEntity player = context.getPlayer();
-        if (!context.getWorld().isClient()){
-            int randomInt = random.nextInt(0,10);
-            player.sendMessage(Text.literal(Outputs[randomInt]));
-        }
-        return ActionResult.SUCCESS;
-
-    }
-    */
-
 }
