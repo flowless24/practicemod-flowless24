@@ -1,6 +1,10 @@
 {
   "itemgroup.new_stuff": "New Stuff",
 
+  "item.practicemod.omlet": "Omlet",
+
   "item.practicemod.printer": "Printer",
+
+
   "block.practicemod.walk_block": "Walk Block"
 }

@@ -18,9 +18,14 @@ public class ModItemGroup {
             new Identifier(PracticeMod.MOD_ID, "new_stuff"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.new_stuff"))
                     .icon(() -> new ItemStack(Items.IRON_INGOT)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.PRINTER);
-                        entries.add(ModBlocks.WALKBLOCK);
+                        // Food
+                        entries.add(ModItems.OMLET);
 
+                        // Items
+                        entries.add(ModItems.PRINTER);
+
+                        // Blocks
+                        entries.add(ModBlocks.WALKBLOCK);
                     }).build());
 
     public static void registerItemGroups(){

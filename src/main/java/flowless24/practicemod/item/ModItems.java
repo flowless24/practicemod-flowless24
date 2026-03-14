@@ -1,12 +1,9 @@
 package flowless24.practicemod.item;
 
 import flowless24.practicemod.PracticeMod;
-import flowless24.practicemod.block.custom.WalkBlock;
 import flowless24.practicemod.item.custom.PrinterItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -14,9 +11,13 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-
+    // Custom Items
     public static final Item PRINTER = addItem("printer",
             new PrinterItem(new FabricItemSettings().maxDamage(64)));
+
+    // Food
+    public static final Item OMLET = addItem("omlet",
+            new Item(new FabricItemSettings().food(ModFoodComponents.OMLET)));
 
     private static Item addItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(PracticeMod.MOD_ID, name), item);
