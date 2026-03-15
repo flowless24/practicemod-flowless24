@@ -15,7 +15,7 @@ public class ModItems {
     public static final Item PRINTER = addItem("printer",
             new PrinterItem(new FabricItemSettings().maxDamage(64)));
 
-    public static final Item RAW_RUBY_ORE = addItem("raw_ruby_ore",
+    public static final Item RAW_RUBY = addItem("raw_ruby",
             new Item(new FabricItemSettings()));
     public static final Item RUBY_INGOT = addItem("ruby_ingot",
             new Item(new FabricItemSettings()));

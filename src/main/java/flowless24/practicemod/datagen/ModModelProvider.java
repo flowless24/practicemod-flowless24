@@ -30,7 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PRINTER, Models.GENERATED);
 
         // Regular Items
-        itemModelGenerator.register(ModItems.RAW_RUBY_ORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_INGOT, Models.GENERATED);
 
         // Food

@@ -22,7 +22,7 @@ public class ModItemGroup {
                         // Items
                         entries.add(ModItems.PRINTER);
 
-                        entries.add(ModItems.RAW_RUBY_ORE);
+                        entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.RUBY_INGOT);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
