@@ -5,13 +5,13 @@
 	"name": "PracticeMod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Flowless24"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/practicemod/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,7 +20,10 @@
 		],
 		"fabric-datagen": [
 			"flowless24.practicemod.PracticeModDataGenerator"
-		]
+		],
+        "client": [
+            "flowless24.practicemod.PracticeModClient"
+        ]
 	},
 	"mixins": [
 		"practicemod.mixins.json"
