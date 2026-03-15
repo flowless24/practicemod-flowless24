@@ -5,6 +5,11 @@
 
   "item.practicemod.printer": "Printer",
 
+  "item.practicemod.ruby_ingot": "Ruby Ingot",
+  "item.practicemod.raw_ruby_ore": "Raw Ruby Ore",
+  "block.practicemod.ruby_ore": "Ruby Ore",
+  "block.practicemod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.practicemod.ruby_block": "Ruby Block",
 
   "block.practicemod.walk_block": "Walk Block"
 }

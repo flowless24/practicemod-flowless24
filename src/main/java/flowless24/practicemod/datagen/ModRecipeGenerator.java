@@ -1,6 +1,7 @@
 package flowless24.practicemod.datagen;
 
 import flowless24.practicemod.PracticeMod;
+import flowless24.practicemod.block.ModBlocks;
 import flowless24.practicemod.item.ModItemGroup;
 import flowless24.practicemod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -12,6 +13,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends FabricRecipeProvider {
@@ -32,5 +34,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(Items.EGG), RecipeCategory.FOOD, ModItems.OMLET, 1f, 100)
                 .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
                 .offerTo(exporter, new Identifier(PracticeMod.MOD_ID, "omlet_from_campfire_cooking"));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RUBY_INGOT, RecipeCategory.MISC, ModBlocks.RUBY_BLOCK);
+
+        offerSmelting(exporter, List.of(ModItems.RAW_RUBY_ORE, ModBlocks.RUBY_ORE, ModBlocks.DEEPSLATE_RUBY_ORE), RecipeCategory.MISC, ModItems.RUBY_INGOT, 0.25f, 100, "new_stuff");
+
     }
 }

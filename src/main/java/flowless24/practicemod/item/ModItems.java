@@ -15,6 +15,13 @@ public class ModItems {
     public static final Item PRINTER = addItem("printer",
             new PrinterItem(new FabricItemSettings().maxDamage(64)));
 
+    public static final Item RAW_RUBY_ORE = addItem("raw_ruby_ore",
+            new Item(new FabricItemSettings()));
+    public static final Item RUBY_INGOT = addItem("ruby_ingot",
+            new Item(new FabricItemSettings()));
+
+
+
     // Food
     public static final Item OMLET = addItem("omlet",
             new Item(new FabricItemSettings().food(ModFoodComponents.OMLET)));

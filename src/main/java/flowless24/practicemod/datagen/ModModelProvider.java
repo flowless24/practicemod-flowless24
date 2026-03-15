@@ -17,12 +17,21 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         // Custom Blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WALKBLOCK);
+
+        // REgular Items
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Custom Items
         itemModelGenerator.register(ModItems.PRINTER, Models.GENERATED);
+
+        // Regular Items
+        itemModelGenerator.register(ModItems.RAW_RUBY_ORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY_INGOT, Models.GENERATED);
 
         // Food
         itemModelGenerator.register(ModItems.OMLET, Models.GENERATED);
