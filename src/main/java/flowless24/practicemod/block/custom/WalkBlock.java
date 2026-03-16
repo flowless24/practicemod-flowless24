@@ -16,13 +16,9 @@ public class WalkBlock extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity){
-        PlayerEntity player = (PlayerEntity) entity;
-        if (!world.isClient && entity.isPlayer()){
+        if (!world.isClient && entity instanceof PlayerEntity player){
             player.getItemCooldownManager().set(ModBlocks.WALKBLOCK.asItem(), 10);
             player.sendMessage(Text.literal(player.getEntityName() + " walked on the block!"));
         }
     }
-
-
-
 }
