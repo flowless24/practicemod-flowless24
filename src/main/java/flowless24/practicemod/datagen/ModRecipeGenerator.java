@@ -22,17 +22,17 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.EGG), RecipeCategory.FOOD, ModItems.OMLET, 1f, 100)
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.EGG), RecipeCategory.FOOD, ModItems.OMELET, 1f, 100)
                 .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
-                .offerTo(exporter, new Identifier(PracticeMod.MOD_ID, "omlet_from_smelting"));
+                .offerTo(exporter, new Identifier(PracticeMod.MOD_ID, "omelet_from_smelting"));
 
-        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(Items.EGG), RecipeCategory.FOOD, ModItems.OMLET, 1f, 100)
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(Items.EGG), RecipeCategory.FOOD, ModItems.OMELET, 1f, 100)
                 .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
-                .offerTo(exporter, new Identifier(PracticeMod.MOD_ID, "omlet_from_smoking"));
+                .offerTo(exporter, new Identifier(PracticeMod.MOD_ID, "omelet_from_smoking"));
 
-        CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(Items.EGG), RecipeCategory.FOOD, ModItems.OMLET, 1f, 100)
+        CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(Items.EGG), RecipeCategory.FOOD, ModItems.OMELET, 1f, 100)
                 .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
-                .offerTo(exporter, new Identifier(PracticeMod.MOD_ID, "omlet_from_campfire_cooking"));
+                .offerTo(exporter, new Identifier(PracticeMod.MOD_ID, "omelet_from_campfire_cooking"));
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RUBY_INGOT, RecipeCategory.MISC, ModBlocks.RUBY_BLOCK);
 

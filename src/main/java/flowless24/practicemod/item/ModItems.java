@@ -23,8 +23,8 @@ public class ModItems {
 
 
     // Food
-    public static final Item OMLET = addItem("omlet",
-            new Item(new FabricItemSettings().food(ModFoodComponents.OMLET)));
+    public static final Item OMELET = addItem("omelet",
+            new Item(new FabricItemSettings().food(ModFoodComponents.OMELET)));
 
     private static Item addItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(PracticeMod.MOD_ID, name), item);

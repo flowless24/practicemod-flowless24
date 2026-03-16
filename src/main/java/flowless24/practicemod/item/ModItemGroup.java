@@ -17,7 +17,7 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.new_stuff"))
                     .icon(() -> new ItemStack(Items.IRON_INGOT)).entries((displayContext, entries) -> {
                         // Food
-                        entries.add(ModItems.OMLET);
+                        entries.add(ModItems.OMELET);
 
                         // Items
                         entries.add(ModItems.PRINTER);

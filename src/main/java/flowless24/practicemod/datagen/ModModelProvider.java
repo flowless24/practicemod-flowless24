@@ -34,6 +34,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_INGOT, Models.GENERATED);
 
         // Food
-        itemModelGenerator.register(ModItems.OMLET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OMELET, Models.GENERATED);
     }
 }
